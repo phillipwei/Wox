@@ -150,7 +150,7 @@ namespace Wox.Infrastructure.Storage.UserSettings
             WebSearches = LoadDefaultWebSearches();
             ProgramSources = new List<ProgramSource>();
             CustomizedPluginConfigs = new List<CustomizedPluginConfig>();
-            Hotkey = "Alt + Space";
+            Hotkey = "Alt + Backspace";
             QueryBoxFont = FontFamily.GenericSansSerif.Name;
             ResultItemFont = FontFamily.GenericSansSerif.Name;
             Opacity = 1;

@@ -63,7 +63,7 @@ namespace Wox
                 text += "Ctrl + Alt";
             }
 
-            if (IsKeyACharOrNumber(key))
+            if (IsAcceptableKey(key))
             {
                 text += " + " + key;
             }
@@ -132,9 +132,14 @@ namespace Wox
 
         }
 
-        private static bool IsKeyACharOrNumber(Key key)
+        private static bool IsAcceptableKey(Key key)
         {
-            return (key >= Key.A && key <= Key.Z) || (key >= Key.D0 && key <= Key.D9);
+            var kc = new KeyConverter();
+            var s = kc.ConvertToString(key);
+            return (key >= Key.A && key <= Key.Z) || 
+                (key >= Key.D0 && key <= Key.D9) ||
+                (key == Key.Back) ||
+                (key == Key.Oem5);
         }
     }
 }
