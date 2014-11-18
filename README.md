@@ -1,3 +1,9 @@
+Todo
+====
+* Ctrl+C to cancel
+* window management
+* Nicer Icon
+
 Wox   [![Build status](https://ci.appveyor.com/api/projects/status/bfktntbivg32e103)](https://ci.appveyor.com/project/qianlifeng/wox)
 =========
 [Wox](http://www.getwox.com) is an effective launcher for windows, which was inspired by [Alfred](http://www.alfredapp.com/) and [Launchy](http://www.launchy.net/). Wox provide bundles of features let you access infomations quickly. 
